@@ -50,39 +50,75 @@ function switchImage() {
 switchImage()
 
 var arrImage2 = [{
-        url: "1-1-1536x1152.jpg",
+        url: "img1.jpg",
         link: ""
     },
     {
-        url: "2-1-1536x1152.jpg",
+        url: "img2.jpg",
         link: ""
     },
     {
-        url: "7-1-1536x1152.jpg",
+        url: "img3.jpg",
         link: ""
     },
     {
-        url: "9-1536x1152.jpg",
+        url: "img4.jpg",
         link: ""
     },
     {
-        url: "10-1536x1152.jpg",
+        url: "img5.jpg",
         link: ""
     }
 ]
 var index = 0;
+var image = document.querySelectorAll('.image-switch');
+image[0].src = `../image/` + arrImage2[0].url;
+image[1].src = `../image/` + arrImage2[1].url;
+image[2].src = `../image/` + arrImage2[2].url;
+
+// chuyển ảnh từ phải sang trái
 
 function nextImage() {
-    let image = document.querySelectorAll('.image-switch');
-    image[index].src = `../image/` + arrImage2[index].url;
-    image[index + 1].src = `../image/` + arrImage2[index].url;
-    image[index + 2].src = `../image/` + arrImage2[index].url;
+    index++;
     if (index < 3) {
-        index++;
-        nextImage();
+        image[0].src = `../image/` + arrImage2[index].url;
+        image[1].src = `../image/` + arrImage2[index + 1].url;
+        image[2].src = `../image/` + arrImage2[index + 2].url
+    } else if (index == 3) {
+        image[0].src = `../image/` + arrImage2[index].url;
+        image[1].src = `../image/` + arrImage2[index + 1].url;
+        image[2].src = `../image/` + arrImage2[0].url;
+    } else if (index == 4) {
+        image[0].src = `../image/` + arrImage2[index].url;
+        image[1].src = `../image/` + arrImage2[0].url;
+        image[2].src = `../image/` + arrImage2[1].url;
     } else {
         index = 0;
-        nextImage()
+        image[0].src = `../image/` + arrImage2[0].url;
+        image[1].src = `../image/` + arrImage2[1].url;
+        image[2].src = `../image/` + arrImage2[2].url;
     }
-
+}
+var index2 = 0;
+// chuyển ảnh từ trái sang phải
+function preImage() {
+    index2++;
+    if (index2 > 1 && index2 < 4) {
+        image[0].src = `../image/` + arrImage2[index2 - 1].url;
+        image[1].src = `../image/` + arrImage2[index2].url;
+        image[2].src = `../image/` + arrImage2[index2 + 1].url
+    } else if (index2 == 0) {
+        image[0].src = `../image/` + arrImage2[4].url;
+        image[1].src = `../image/` + arrImage2[index2].url;
+        image[2].src = `../image/` + arrImage2[index2 + 1].url;
+    } else if (index2 == 1) {
+        image[0].src = `../image/` + arrImage2[3].url;
+        image[1].src = `../image/` + arrImage2[4].url;
+        image[2].src = `../image/` + arrImage2[index2].url;
+    } else {
+        index2 = 0
+        image[0].src = `../image/` + arrImage2[0].url;
+        image[1].src = `../image/` + arrImage2[1].url;
+        image[2].src = `../image/` + arrImage2[2].url;
+    }
 }

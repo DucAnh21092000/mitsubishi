@@ -1,0 +1,123 @@
+:root {
+    --colorText: #e60113;
+    ;
+}
+
+body {
+    font-size: 100%;
+}
+
+.logo {
+    height: 90px;
+    width: 140px;
+    object-fit: contain;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.header-menu__item:hover {
+    color: var(--colorText);
+}
+
+.header-menu__item:hover {
+    color: var(--colorText);
+}
+
+.header-image {
+    width: 30%;
+}
+
+.hide-menu__item {
+    width: 15%;
+}
+
+.item-image {
+    width: 203px;
+    height: 103px;
+    object-fit: contain;
+}
+
+.item-name {
+    color: #4e657b;
+}
+
+.hide-menu__item {
+    float: left;
+}
+
+.item-name:hover {
+    color: var(--colorText)
+}
+
+.hide-menu {
+    display: none;
+    width: 80%;
+    z-index: 3;
+}
+
+.content {
+    background-color: rgb(238, 238, 238);
+}
+
+.content-product {
+    border-bottom: red 2px solid;
+}
+
+.content-product__items {
+    width: 33.33%;
+}
+
+.content-product__items-btn {
+    width: 30%;
+    margin-right: 30px;
+    background-color: var(--colorText);
+}
+
+.info-text {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 1.3rem;
+}
+
+
+/* CSS introduce */
+
+.introduce-items {
+    width: 21%;
+    margin: 20px 30px 40px 0px;
+}
+
+.introduce-items__info {
+    width: 21%;
+    margin: 20px 30px 40px 0px;
+    height: 120px;
+    border: 1px rgb(198, 198, 198) outset;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgb(198, 198, 198);
+}
+
+.image-switch {
+    margin-right: 10px;
+    width: 28%;
+}
+
+
+/* css footer */
+
+.footer {
+    background-color: rgb(55, 55, 55);
+}
+
+.border-footer {
+    border-bottom: 1px white solid;
+    width: 100%;
+}

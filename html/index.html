@@ -17,11 +17,14 @@
 </head>
 
 <body>
+    <!-- header -->
     <div class="header container">
+        <!-- Menu for mobile -->
         <div class="menu-mobile">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
+            <!-- Menu for Pc -->
         </div>
         <div class="header-image">
             <img src="../image/logo_viethung.png" alt=" " class="logo">
@@ -47,6 +50,9 @@
             </div>
         </div>
     </div>
+    <!-- end header -->
+
+    <!-- Hide menu -->
     <div class="d-flex justify-content-center" style="width: 100%;margin: 0px auto;">
         <div class="hide-menu  position-absolute btn-light text-center ">
             <div class="hide-menu__item">
@@ -74,13 +80,20 @@
                 <p class="text-uppercase text-center item-name"> new Xpander cross</p>
             </div>
         </div>
+        <!-- end hide menu -->
+
+        <!-- slide image -->
+        <!-- tự động chuyển ảnh sau 3s dùng js trong file switch image -->
         <div class="content" style="z-index:2;">
             <div class="slide">
                 <img alt="" class="img-slide" width="100%">
             </div>
         </div>
-
+        <!-- end slide image -->
     </div>
+
+    <!-- Danh sách sản phẩm -->
+
     <div class="content mb-2">
         <div class="container ">
             <div class="d-flex content-product w-100">
@@ -88,6 +101,7 @@
                 <h3 class="mt-2">Các dòng xe MITSUBISHI</h3>
             </div>
             <div class="d-flex flex-wrap">
+
                 <div class="content-product__items d-flex flex-column text-center">
                     <img src="../image/NEW-OUTLANDER.png" alt="" class="w-100 text-center">
                     <p class=" text-uppercase"> new outlander</p>
@@ -122,25 +136,32 @@
                 <button type="button" class="mt-5  text-white text-uppercase content-product__items-btn btn "><h5 class="btn-info__text"> <i class="fa fa-envelope " aria-hidden="true"></i> Đăng ký lái thử</h5></button>
                 <button type="button" class="mt-5  text-white text-uppercase content-product__items-btn btn "><h5 class="btn-info__text"> <i class="fa fa-envelope " aria-hidden="true"></i> Báo giá trả góp</h5></button>
             </div>
-
         </div>
     </div>
+
+    <!-- Kết thúc danh sách sản phẩm -->
+
     <div class="d-flex flex-column">
+        <!-- dòng kẻ ngang màu đỏ giữa màn hình -->
         <div class="w-100 d-flex mt-5 mb-3 justify-content-center">
             <div class="w-25 d-flex  justify-content-center">
                 <div class="w-25" style="border-bottom: red 2px solid ;"></div>
             </div>
         </div>
-        <div class="info mt-5 d-flex container">
-
-            <img src="../image/anh-showroom-1536x794.png" style="object-fit:cover; height: 370px;" alt="" class=" w-50">
-            <div class="d-flex flex-column w-50">
+        <!-- đoạn văn giới thiệu -->
+        <div class="info mt-5 d-flex flex-row flex-wrap container">
+            <img src="../image/anh-showroom-1536x794.png" style="object-fit:cover; height: 370px;" alt="" class="w-50">
+            <div class="info-all__text w-50">
                 <p class="ml-4 info-text">Công ty TNHH ôtô Việt Hùng là nhà phân phối 3S chính thức Mitsubishi Việt Nam. Chúng tôi cung cấp các sản phẩm và dịch vụ theo tiêu chuẩn của Mitsubishi Việt Nam và Mitsubishi toàn cầu:</p>
-                <span class="ml-4" style="font-size: 1.3rem;">Với phương châm kinh doanh “Tất cả vì sự hài lòng của khách hàng”, công ty không những đầu tư cơ sở vật chất và công nghệ hiện đại mà còn phát huy tối đa các nguồn nhân lực, đào tạo nhân sự bài bản bởi các chuyên gia hàng đầu của Mitsubishi Nhật
-                    Bản
-                </span>
+                <div class="ml-4 info-text-2" style="font-size: 1.3rem;">Với phương châm kinh doanh “Tất cả vì sự hài lòng của khách hàng”, công ty không những đầu tư cơ sở vật chất và công nghệ hiện đại mà còn phát huy tối đa các nguồn nhân lực, đào tạo nhân sự bài bản bởi các chuyên gia hàng đầu của Mitsubishi
+                    Nhật Bản
+                </div>
+            </div>
+            <div class="ml-4 info-text__mobile" style="font-size: 1.3rem;">Với phương châm kinh doanh “Tất cả vì sự hài lòng của khách hàng”, công ty không những đầu tư cơ sở vật chất và công nghệ hiện đại mà còn phát huy tối đa các nguồn nhân lực, đào tạo nhân sự bài bản bởi các chuyên gia hàng đầu của Mitsubishi
+                Nhật Bản
             </div>
         </div>
+        <!-- Giới thiệu -->
         <div class=" introduce  container">
             <div class="d-flex flex-wrap">
                 <img src="../image/45.jpg" alt="" class="introduce-items">
@@ -173,6 +194,7 @@
             </div>
         </div>
 
+        <!-- click để chuyển ảnh dùng file switchImage.js -->
         <div class="switch-image container d-flex align-items-center">
             <img onclick="nextImage()" src="../image/arrleft.png" alt="" class="" style="transform: scaleX(-1);">
             <div class="d-flex justify-content-around">
@@ -182,6 +204,8 @@
             </div>
             <img onclick="preImage()" src="../image/arrleft.png" alt="" class="">
         </div>
+
+        <!-- Footer start -->
         <div class="footer  mt-5">
             <div class="container text-white d-flex justify-content-around mt-5">
                 <img src="../image/logo_viethung.png" style="width: 19%; height: 19%;object-fit: cover;" alt="" class="">
@@ -213,16 +237,19 @@
         <div class="text-center pt-2 pb-2" style="background-color: rgb(91,91,91);">
             © Bản quyền thuộc về Mitsubishi Thiết kế và duy trì bởi HazoMedia
         </div>
-
+        <!-- End footer -->
     </div>
+    <!-- Click vào ảnh  để lên đầu trang -->
     <img class="imgScrollTop " src="../image/arrowTop.png" style="width: 30px;position: fixed; right:10px;bottom:10px;" alt="">
+
 
     <!-- Optional JavaScript but it is better to add it-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
-    <script class=" " src="../js/main.js "></script>
+    <script class=" " src="../js/switchImage.js"></script>
+    <script class="" src="../js/hoverMenu.js"></script>
     <script class="" src="../js/scrollTop.js"></script>
 </body>
 

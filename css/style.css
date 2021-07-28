@@ -86,6 +86,21 @@ body {
 .info-text {
     font-family: "Dancing Script", sans-serif;
     font-size: 1.3rem;
+    width: 100%;
+}
+
+.info-text-2 {
+    width: 100%;
+}
+
+.info-all__text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.info-text__mobile {
+    display: none !important;
 }
 
 
@@ -106,7 +121,6 @@ body {
 }
 
 .image-switch {
-    margin-right: 10px;
     width: 28%;
 }
 

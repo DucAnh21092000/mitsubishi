@@ -135,3 +135,86 @@ body {
     border-bottom: 1px white solid;
     width: 100%;
 }
+
+
+/* Zoom ảnh */
+
+.items-image__product:hover {
+    transform: scale(1.5);
+    transition-delay: 0.1s;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-property: all;
+    display: block;
+}
+
+.unhover {
+    transform: scale(1);
+    transition-delay: 0.1s;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-property: all;
+    display: block;
+}
+
+
+/*end zoom ảnh */
+
+
+/* menu hover */
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.hide-menu__new {
+    z-index: 4;
+    top: 54px;
+    width: 18%;
+    right: 10%;
+    color: black;
+    border: 2px groove rgba(248, 237, 237, 0.85);
+    font-size: 0.9rem;
+}
+
+.hide-menu__new .new-item:hover {
+    color: red;
+    background-color: rgb(214, 209, 209);
+}
+
+.new-item {
+    color: rgba(102, 102, 102, 0.85);
+    padding: 10px 20px;
+}
+
+.hide-menu__new {
+    display: none
+}
+
+.header-menu__item:hover .hide-menu__new {
+    display: block;
+}
+
+.hide-menu__buy {
+    z-index: 4;
+    top: 8%;
+    width: 18%;
+    right: 20%;
+    color: black;
+    border: 2px groove rgba(248, 237, 237, 0.85);
+    font-size: 0.9rem;
+}
+
+.hide-menu__buy .new-item:hover {
+    color: red;
+    background-color: rgb(214, 209, 209);
+}
+
+.hide-menu__buy {
+    display: none
+}
+
+.header-menu__item:hover .hide-menu__buy {
+    display: block;
+}

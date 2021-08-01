@@ -79,8 +79,22 @@ body {
 
 .content-product__items-btn {
     width: 30%;
-    margin-right: 30px;
     background-color: var(--colorText);
+}
+
+.content-product__allBtn {
+    justify-content: space-between;
+}
+
+.icon-mess {
+    margin-right: 5%;
+}
+
+
+/* Css phần info */
+
+.info-image {
+    width: 50%;
 }
 
 .info-text {
@@ -107,14 +121,14 @@ body {
 /* CSS introduce */
 
 .introduce-items {
-    width: 21%;
-    margin: 20px 30px 40px 0px;
+    width: 23%;
+    margin: 20px 0;
 }
 
 .introduce-items__info {
-    width: 21%;
-    margin: 20px 30px 40px 0px;
+    width: 23%;
     height: 120px;
+    margin: 20px 0;
     border: 1px rgb(198, 198, 198) outset;
     border-radius: 10px;
     box-shadow: 1px 2px 2px rgb(198, 198, 198);
@@ -217,4 +231,23 @@ ul {
 
 .header-menu__item:hover .hide-menu__buy {
     display: block;
+}
+
+.footer-items {
+    width: 25%;
+    margin: 0px 5px;
+}
+
+.footer-logo {
+    width: 19%;
+    height: 19%;
+    object-fit: cover;
+}
+
+.footer-fanpage {
+    text-align: left!important;
+}
+
+.header-main {
+    flex-direction: row!important;
 }

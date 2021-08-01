@@ -1,0 +1,66 @@
+@media only screen and (max-width:400px) {
+    .header-menu {
+        display: none;
+    }
+    .menu-mobile {
+        display: block !important;
+    }
+    .content-product__items-btn {
+        width: 100%;
+        border-radius: 10px;
+        margin-right: 0px;
+    }
+    .content-product__items {
+        width: 50%;
+    }
+    .content-product__allBtn {
+        flex-direction: column;
+    }
+    .info-image {
+        width: 100%;
+    }
+    .info-all__text {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .info-text {
+        width: 100%;
+        margin: 0!important;
+    }
+    .info-text-2 {
+        width: 100%;
+        margin: 0!important;
+    }
+    /* CSS giới thiệu  */
+    .introduce-items {
+        width: 48% !important;
+        margin: 3% 0 !important;
+    }
+    .introduce-items__info {
+        width: 48% !important;
+        margin: 3% 0 !important;
+    }
+    .image-switch:first-child {
+        display: none;
+    }
+    .image-switch:last-child {
+        display: none;
+    }
+    .image-switch {
+        width: 90%;
+    }
+    /* Css footer */
+    .footer .header-main {
+        display: flex !important;
+        flex-direction: column!important;
+        width: 100% !important;
+    }
+    .footer-logo {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .footer-items {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}

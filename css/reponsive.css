@@ -1,4 +1,4 @@
-@media only screen and (max-width:800px) {
+@media only screen and (min-width:420px) and (max-width:801px) {
     .header-menu {
         display: none;
     }
@@ -65,4 +65,24 @@
 
 .menu-mobile {
     display: none;
+}
+
+
+/* Css footer */
+
+.footer .header-main {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.footer-items {
+    width: 40%;
+    margin-bottom: 20px;
 }

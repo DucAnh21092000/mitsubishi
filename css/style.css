@@ -1,6 +1,5 @@
 :root {
     --colorText: #e60113;
-    ;
 }
 
 body {
@@ -16,6 +15,18 @@ body {
 .header {
     display: flex;
     align-items: center;
+    background-color: white;
+    z-index: 9;
+}
+
+
+/* header hiện lên khi scroll */
+
+.header-scroll {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9
 }
 
 .header-menu {
@@ -23,6 +34,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     width: 70%;
+    margin-right: 8%;
 }
 
 .header-menu__item:hover {
@@ -35,6 +47,7 @@ body {
 
 .header-image {
     width: 30%;
+    margin-left: 4%;
 }
 
 .hide-menu__item {
@@ -56,7 +69,7 @@ body {
 }
 
 .item-name:hover {
-    color: var(--colorText)
+    color: var(--colorText);
 }
 
 .hide-menu {
@@ -183,13 +196,23 @@ ul {
 }
 
 .hide-menu__new {
-    z-index: 4;
-    top: 54px;
+    z-index: 9;
+    top: 8%;
     width: 18%;
     right: 10%;
     color: black;
     border: 2px groove rgba(248, 237, 237, 0.85);
     font-size: 0.9rem;
+}
+
+.menu-product__scroll {
+    top: 11%;
+    position: fixed !important;
+}
+
+.menu-scroll__new {
+    top: 70%!important;
+    position: fixed;
 }
 
 .hide-menu__new .new-item:hover {
@@ -203,7 +226,7 @@ ul {
 }
 
 .hide-menu__new {
-    display: none
+    display: none;
 }
 
 .header-menu__item:hover .hide-menu__new {
@@ -226,7 +249,7 @@ ul {
 }
 
 .hide-menu__buy {
-    display: none
+    display: none;
 }
 
 .header-menu__item:hover .hide-menu__buy {
@@ -245,9 +268,9 @@ ul {
 }
 
 .footer-fanpage {
-    text-align: left!important;
+    text-align: left !important;
 }
 
 .header-main {
-    flex-direction: row!important;
+    flex-direction: row !important;
 }

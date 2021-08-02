@@ -1,4 +1,4 @@
-@media only screen and (min-width:420px) and (max-width:801px) {
+@media only screen and (min-width:410px) and (max-width:801px) {
     .header-menu {
         display: none;
     }
@@ -31,6 +31,7 @@
     }
     .introduce-items__info {
         margin: 10px;
+        width: 20%;
     }
     .image-switch:first-child {
         display: none;

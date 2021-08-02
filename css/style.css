@@ -135,7 +135,9 @@ body {
 
 .introduce-items {
     width: 23%;
+    height: 23%;
     margin: 20px 0;
+    object-fit: cover;
 }
 
 .introduce-items__info {

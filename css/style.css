@@ -149,6 +149,8 @@ body {
 
 .image-switch {
     width: 28%;
+    height: 28%;
+    object-fit: cover;
 }
 
 

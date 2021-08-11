@@ -2,6 +2,16 @@
     .header-menu {
         display: none;
     }
+    .header {
+        justify-content: space-between;
+        max-width: 95%;
+        margin: 0px auto;
+    }
+    .header-image {
+        margin: 0;
+        object-fit: cover;
+        width: 50%;
+    }
     .menu-mobile {
         display: block !important;
     }

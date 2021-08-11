@@ -1,5 +1,5 @@
 :root {
-    --colorText: #e60113;
+    --colorText: pink;
 }
 
 body {
@@ -7,8 +7,8 @@ body {
 }
 
 .logo {
-    height: 90px;
-    width: 140px;
+    height: 100%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -17,7 +17,20 @@ body {
     align-items: center;
     background-color: white;
     z-index: 9;
+    height: 5.6rem;
+    justify-content: space-between;
+    font-size: 0.9rem;
 }
+
+
+/*hide menu for mobile */
+
+.hideMenu-mobile {
+    width: 100%
+}
+
+
+/*end hide menu for mobile */
 
 
 /* header hiện lên khi scroll */
@@ -32,8 +45,8 @@ body {
 .header-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 70%;
+    justify-content: space-between;
+    width: 58%;
     margin-right: 8%;
 }
 
@@ -46,8 +59,9 @@ body {
 }
 
 .header-image {
-    width: 30%;
+    width: 15%;
     margin-left: 4%;
+    height: 100%;
 }
 
 .hide-menu__item {

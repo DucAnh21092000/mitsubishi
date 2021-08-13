@@ -1,339 +1,465 @@
-       .header-search {
-           background-color: rgb(249, 249, 249);
-           height: 50%;
-           border: 1px rgb(236, 236, 236) ridge;
-       }
-       
-       .header {
-           height: 5rem;
-       }
-       
-       .header-menu__item {
-           float: right
-       }
-       
-       .logo {
-           position: absolute;
-           background-color: rgb(255, 255, 255);
-           border-radius: 10px;
-           object-fit: cover;
-           box-shadow: 0px 0px 10px;
-           padding: 10px 20px;
-           left: 7%;
-       }
-       
-       .header-menu__logo {
-           width: 30%;
-           object-fit: cover;
-       }
-       
-       .input-search {
-           font-size: 0.8rem;
-           border-top: none;
-           border-left: none;
-           border-right: none;
-           border-bottom: 1px rgb(221, 221, 221) solid;
-           padding: 4px 0px;
-       }
-       
-       .input-search:focus {
-           border-top: none;
-           border-left: none;
-           border-right: none;
-           border-bottom: 1px rgb(221, 221, 221) solid;
-       }
-       
-       .btn-search {
-           position: relative;
-           margin-left: -15%;
-       }
-       
-       .header-menu__item {
-           margin-right: -3%
-       }
-       
-       .menu-ul {
-           list-style: none;
-           padding: 0px 14%;
-       }
-       
-       .menu-li {
-           float: left;
-       }
-       
-       .menu-li::before {
-           content: "|";
-           margin: 0 10px;
-       }
-       
-       .menu-li:first-child::before {
-           content: "";
-           margin: 0 10px;
-       }
-       
-       .a {
-           height: 26px;
-       }
-       
-       .header-menu__list {
-           width: 85%;
-       }
-       
-       .header-menu {
-           height: 2.8rem;
-           border-bottom: 4px rgb(200, 16, 46) solid;
-       }
-       
-       .slide-image {
-           width: 100%;
-       }
-       
-       .slide {
-           box-sizing: content-box;
-       }
-       
-       .menu-info {
-           background-color: rgb(247, 247, 247);
-       }
-       
-       .menu-info__list {
-           display: grid;
-           grid-template-columns: repeat(8, 1fr);
-           grid-template-rows: repeat(1, 100px);
-       }
-       
-       .menu-info__item {
-           background-color: rgb(238, 238, 238);
-       }
-       
-       .info-item {
-           list-style: none;
-           text-decoration: none;
-           display: flex;
-           justify-content: center;
-           flex-direction: column;
-           align-items: center;
-       }
-       
-       .info-item:hover {
-           text-decoration: none;
-       }
-       
-       .info-item__image {
-           width: 69%;
-       }
-       
-       .info-item__name {
-           width: max-content;
-       }
-       
-       .menu-info__item:nth-child(2),
-       .menu-info__item:nth-child(4),
-       .menu-info__item:nth-child(6),
-       .menu-info__item:nth-child(8) {
-           background-color: inherit;
-       }
-       
-       .menuRight {
-           background-color: rgb(77, 77, 77);
-           position: fixed;
-           right: 0.1%;
-           max-height: 300px;
-           top: 40%;
-           border-bottom-left-radius: 10px;
-           border-top-left-radius: 10px;
-       }
-       
-       .menuRight-item {
-           padding: 3px 0;
-           border-bottom: 1px rgb(228, 227, 227) groove;
-       }
-       
-       .product {
-           width: 100%;
-       }
-       
-       .product-info__name {
-           border-bottom: 1px solid black;
-           width: max-content;
-           font-weight: 400;
-       }
-       
-       .text-red {
-           color: #c8102e;
-       }
-       
-       .li-info {
-           font-size: 0.8rem;
-       }
-       
-       .btn-1 {
-           background-color: var(--colorRed);
-           color: white;
-           padding: 1% 10%;
-           width: 40%;
-           height: 10%;
-           margin-right: 3%;
-           border: none;
-           border-radius: 5px;
-       }
-       
-       .btn-2 {
-           background-color: rgb(244, 244, 244);
-           padding: 1% 10%;
-           width: 40%;
-           height: 10%;
-           border: none;
-           border-radius: 5px;
-       }
-       
-       .product-img {
-           width: 100%;
-           object-fit: contain;
-       }
-       
-       .btn-1:hover {
-           background-color: #000;
-       }
-       
-       .btn-2:hover {
-           background-color: #000;
-           color: white;
-       }
-       
-       .product-style {
-           border-bottom: 1px solid black;
-           width: 60%;
-       }
-       
-       .product-color {
-           width: 60%;
-           display: grid;
-           grid-template-columns: repeat(7, 1fr);
-           grid-template-rows: 100px;
-           list-style: none;
-           margin-top: 1%;
-           grid-gap: 2%;
-           padding: 0;
-       }
-       
-       .product-image {
-           width: 50%;
-       }
-       
-       .product .item-1 {
-           background-color: rgb(162, 38, 0);
-           height: 37%;
-       }
-       
-       .item-2 {
-           background-color: rgb(236, 237, 237);
-           height: 37%;
-       }
-       
-       .item-3 {
-           background-color: rgb(179, 5, 6);
-           height: 37%;
-       }
-       
-       .item-4 {
-           background-color: rgb(37, 37, 38);
-           height: 37%;
-       }
-       
-       .item-5 {
-           background-color: rgb(27, 29, 30);
-           height: 37%;
-       }
-       
-       .item-6 {
-           background-color: rgb(186, 189, 193);
-           height: 37%;
-       }
-       
-       .item-7 {
-           background-color: rgb(223, 206, 13);
-           height: 37%;
-       }
-       /* other product */
-       
-       .name-sp {
-           margin: 0 6%;
-           font-size: 1.3rem;
-           font-weight: 600;
-       }
-       
-       .price-sp {
-           margin: 0 6%;
-           font-size: 0.7rem;
-           font-weight: 600;
-       }
-       
-       .info-morePr {
-           border-left: 4px var(--colorRed) solid;
-           padding: 0;
-           box-sizing: content-box;
-           width: 35%;
-       }
-       
-       .library {
-           margin-left: 5%;
-       }
-       
-       .library-image {
-           display: grid;
-           grid-template-columns: repeat(4, 1fr);
-           margin: 0;
-       }
-       /* View more */
-       
-       .viewMore {
-           display: flex;
-           margin: 2% 0;
-           justify-content: center;
-           background: linear-gradient(to left, rgb(255, 255, 255), rgb(204, 204, 204), rgb(255, 255, 255));
-           z-index: 2;
-           height: 1px;
-       }
-       
-       .viewMore-text {
-           position: absolute;
-           padding: 3px 24px;
-           border-radius: 20px;
-           border: 1px solid rgb(186, 189, 193);
-           margin-top: -15px;
-           background-color: rgb(255, 255, 255);
-           font-size: 0.9rem;
-       }
-       
-       .ngoaithat-item__1 {
-           display: grid;
-           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-           grid-template-rows: 300px;
-       }
-       
-       .item-1 {
-           background: url(https://www.toyota.com.vn/Content/images/detail_ngoaithat_bg.png);
-           background-repeat: no-repeat;
-           background-position-x: 85%;
-           background-color: #f6f6f6;
-           padding: 0 10%;
-       }
-       
-       .item-2 {
-           background: url(https://www.toyota.com.vn/data/news/8712/_3/1xk5s2.png);
-           height: 100%;
-           background-repeat: no-repeat;
-           background-size: contain;
-       }
-       
-       .ngoaithat-item__2 {
-           display: grid;
-           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-           grid-template-rows: 300px;
-           grid-gap: 10px;
-       }
-       
-       .ngoaithat-img {
-           object-fit: contain;
-       }
+/* header  */
+
+.header-search {
+    background-color: rgb(249, 249, 249);
+    height: 50%;
+    border: 1px rgb(236, 236, 236) ridge;
+}
+
+.header {
+    height: 5rem;
+}
+
+.header-menu__item {
+    float: right
+}
+
+.logo {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px;
+    padding: 10px 20px;
+    left: 7%;
+}
+
+.header-menu__logo {
+    width: 30%;
+    object-fit: cover;
+}
+
+.input-search {
+    font-size: 0.8rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px rgb(221, 221, 221) solid;
+    padding: 4px 0px;
+}
+
+.input-search:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px rgb(221, 221, 221) solid;
+}
+
+.btn-search {
+    position: relative;
+    margin-left: -15%;
+}
+
+.header-menu__item {
+    margin-right: -3%
+}
+
+.menu-ul {
+    list-style: none;
+    padding: 0px 14%;
+}
+
+.menu-li {
+    float: left;
+}
+
+.menu-li::before {
+    content: "|";
+    margin: 0 10px;
+}
+
+.menu-li:first-child::before {
+    content: "";
+    margin: 0 10px;
+}
+
+.a {
+    height: 26px;
+}
+
+.header-menu__list {
+    width: 85%;
+}
+
+.header-menu {
+    height: 2.8rem;
+    border-bottom: 4px rgb(200, 16, 46) solid;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.slide {
+    box-sizing: content-box;
+}
+
+.menu-info {
+    background-color: rgb(247, 247, 247);
+}
+
+.menu-info__list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 100px);
+}
+
+.menu-info__item {
+    background-color: rgb(238, 238, 238);
+}
+
+.info-item {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-item:hover {
+    text-decoration: none;
+}
+
+.info-item__image {
+    width: 69%;
+}
+
+.info-item__name {
+    width: max-content;
+}
+
+.menu-info__item:nth-child(2),
+.menu-info__item:nth-child(4),
+.menu-info__item:nth-child(6),
+.menu-info__item:nth-child(8) {
+    background-color: inherit;
+}
+
+.menuRight {
+    background-color: rgb(77, 77, 77);
+    position: fixed;
+    right: 0.1%;
+    max-height: 300px;
+    top: 40%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.menuRight-item {
+    padding: 3px 0;
+    border-bottom: 1px rgb(228, 227, 227) groove;
+}
+
+.product {
+    width: 100%;
+}
+
+.product-info__name {
+    border-bottom: 1px solid black;
+    width: max-content;
+    font-weight: 400;
+}
+
+.text-red {
+    color: #c8102e;
+}
+
+.li-info {
+    font-size: 0.8rem;
+}
+
+.btn-1 {
+    background-color: var(--colorBtn);
+    color: white;
+    padding: 1% 10%;
+    width: 40%;
+    height: 10%;
+    margin-right: 3%;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-2 {
+    background-color: rgb(244, 244, 244);
+    padding: 1% 10%;
+    width: 40%;
+    height: 10%;
+    border: none;
+    border-radius: 5px;
+}
+
+.product-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.btn-1:hover {
+    background-color: var(--btnBlack);
+}
+
+.btn-2:hover {
+    background-color: var(--btnBlack);
+    color: white;
+}
+
+.product-style {
+    border-bottom: 1px solid black;
+    width: 60%;
+}
+
+.product-color {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 100px;
+    list-style: none;
+    margin-top: 1%;
+    grid-gap: 2%;
+    padding: 0;
+}
+
+.product-image {
+    width: 50%;
+}
+
+.item-color-1 {
+    background-color: rgb(162, 38, 0);
+    height: 37%;
+}
+
+.item-color-2 {
+    background-color: rgb(236, 237, 237);
+    height: 37%;
+}
+
+.item-color-3 {
+    background-color: rgb(179, 5, 6);
+    height: 37%;
+}
+
+.item-color-4 {
+    background-color: rgb(37, 37, 38);
+    height: 37%;
+}
+
+.item-color-5 {
+    background-color: rgb(27, 29, 30);
+    height: 37%;
+}
+
+.item-color-6 {
+    background-color: rgb(186, 189, 193);
+    height: 37%;
+}
+
+.item-color-7 {
+    background-color: rgb(223, 206, 13);
+    height: 37%;
+}
+
+
+/* other product */
+
+.name-sp {
+    margin: 0 6%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.price-sp {
+    margin: 0 6%;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.info-morePr {
+    border-left: 4px var(--colorRed) solid;
+    padding: 0;
+    box-sizing: content-box;
+    width: 35%;
+}
+
+.library {
+    width: 100%;
+}
+
+.library-image {
+    display: flex;
+    margin: 0;
+    width: 100%
+}
+
+.library-name {
+    margin-left: 3%;
+}
+
+.library-image__item {
+    object-fit: cover;
+    width: 25%;
+}
+
+
+/* View more */
+
+.viewMore {
+    display: flex;
+    margin: 2% 0;
+    justify-content: center;
+    background: linear-gradient(to left, rgb(255, 255, 255), rgb(204, 204, 204), rgb(255, 255, 255));
+    z-index: 2;
+    height: 1px;
+}
+
+.viewMore-text {
+    position: absolute;
+    padding: 3px 24px;
+    border-radius: 20px;
+    border: 1px solid rgb(186, 189, 193);
+    margin-top: -15px;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+}
+
+.ngoaithat-item__1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 300px;
+}
+
+.item-1 {
+    background: url(https://www.toyota.com.vn/Content/images/detail_ngoaithat_bg.png);
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-color: #f6f6f6;
+    padding: 0 10%;
+}
+
+.item-2 {
+    background: url(https://www.toyota.com.vn/data/news/8712/_3/1xk5s2.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ngoaithat-item__2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: 300px;
+}
+
+.ngoaithat-img {
+    object-fit: contain;
+}
+
+
+/* Support */
+
+.support {
+    height: 10rem;
+}
+
+.support-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-box__item {
+    height: 100%;
+    background: url(https://www.toyota.com.vn/Content/images/support_bg.png);
+    background-repeat: no-repeat;
+    width: 30%;
+}
+
+.support-box__phone {
+    position: absolute;
+    margin-left: 18%;
+    margin-bottom: 1.3%;
+}
+
+.btn-contact {
+    padding: 0.5% 5.3%;
+    background-color: var(--colorBtn);
+}
+
+.btn-contact:hover {
+    background-color: var(--btnBlack);
+    color: white
+}
+
+
+/*  CSS nội thất */
+
+.furniture-image {
+    width: 50%;
+    height: 321px;
+    object-fit: cover;
+}
+
+.furniture-item {
+    padding: 5% 5%;
+    background: url(https://www.toyota.com.vn/Content/images/detail_noithat_bg.png);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-color: #f6f6f6;
+    width: 50%;
+    float: right;
+    height: 321px;
+}
+
+.furniture-item__header {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.furniture-list__image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    width: 99.5%;
+}
+
+
+/* Tính năng */
+
+.feature {
+    background: rgb(246, 246, 246);
+}
+
+.feature-btn {
+    border-bottom: 1px black solid;
+    padding-bottom: 1%;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 2%;
+}
+
+.feature-list__item {
+    background: white;
+}
+
+.feature-list__item:hover .border-info__item {
+    border-left: 5px solid var(--colorRed);
+}
+
+.list-item__info {
+    padding-top: 10%;
+}
+
+.item-info {
+    padding: 2% 0 2% 5%;
+}
+
+.border-info__item {
+    border-left: 5px solid rgb(221, 221, 221);
+}
+
+.feature-list__safes {
+    display: none;
+}

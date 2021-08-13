@@ -8,6 +8,12 @@
 
 .header {
     height: 5rem;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
 }
 
 .header-menu__item {
@@ -92,10 +98,13 @@
 
 .slide {
     box-sizing: content-box;
+    margin-top: 5rem;
+    z-index: 3;
 }
 
 .menu-info {
     background-color: rgb(247, 247, 247);
+    z-index: 9;
 }
 
 .menu-info__list {
@@ -106,6 +115,34 @@
 
 .menu-info__item {
     background-color: rgb(238, 238, 238);
+    border: 1px rgb(209, 205, 205) groove;
+    border-top: none;
+    border-bottom: none;
+}
+
+.menu-info__item:hover {
+    border-bottom: 3px solid rgb(88, 86, 86);
+}
+
+.menu-info__item:nth-child(2),
+.menu-info__item:nth-child(4),
+.menu-info__item:nth-child(6),
+.menu-info__item:nth-child(8) {
+    background-color: inherit;
+    border: none
+}
+
+.menu-info__item:nth-child(2):hover,
+.menu-info__item:nth-child(4):hover,
+.menu-info__item:nth-child(6):hover,
+.menu-info__item:nth-child(8):hover {
+    background-color: inherit;
+    border-bottom: 3px solid rgb(88, 86, 86);
+}
+
+.menu-info__item:nth-child(8) {
+    background-color: inherit;
+    border-right: 1px rgb(209, 205, 205) groove;
 }
 
 .info-item {
@@ -129,13 +166,6 @@
     width: max-content;
 }
 
-.menu-info__item:nth-child(2),
-.menu-info__item:nth-child(4),
-.menu-info__item:nth-child(6),
-.menu-info__item:nth-child(8) {
-    background-color: inherit;
-}
-
 .menuRight {
     background-color: rgb(77, 77, 77);
     position: fixed;
@@ -153,6 +183,10 @@
 
 .product {
     width: 100%;
+}
+
+#tq {
+    margin-bottom: 5rem;
 }
 
 .product-info__name {
@@ -282,6 +316,7 @@
 
 .library {
     width: 100%;
+    margin-top: 5rem;
 }
 
 .library-image {
@@ -452,14 +487,27 @@
     padding-top: 10%;
 }
 
+.list-item__info p {
+    margin: 0
+}
+
 .item-info {
     padding: 2% 0 2% 5%;
 }
 
 .border-info__item {
     border-left: 5px solid rgb(221, 221, 221);
+    box-sizing: content-box;
 }
 
 .feature-list__safes {
     display: none;
+}
+
+
+/* Phụ kiện */
+
+.accessory-btn {
+    border-bottom: 1px black solid;
+    padding-bottom: 1%;
 }

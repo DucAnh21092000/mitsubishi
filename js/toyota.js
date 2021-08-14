@@ -1,3 +1,4 @@
+// click vào btn của mục tính năng sẽ hiển thị đúng nội dung
 (function() {
     let featureListSafe = $('.feature-list__safes')
     let featureListOperate = $('.feature-list__operates')
@@ -12,6 +13,7 @@
         featureListOperate.hide()
     })
 }())
+
 
 !(function() {
     let header = $('.header')
@@ -32,3 +34,28 @@
     })
 
 }());
+// click vào btn của mục Phụ kiện sẽ hiển thị đúng nội dung
+(function() {
+    let accessoryListExterior = $('.accessory-list__exteriors')
+    let accessoryListUltility = $('.accessory-list__ultilitys')
+    let accessoryListAccessory = $('.accessory-list__accessorys')
+
+    let btnExterior = $('.btn-exterior')
+    let btnUltility = $('.btn-ultility')
+    let btnAccessory = $('.btn-accessory')
+    btnExterior.click(function() {
+        accessoryListAccessory.hide()
+        accessoryListUltility.hide()
+        accessoryListExterior.show()
+    })
+    btnUltility.click(function() {
+        accessoryListAccessory.hide()
+        accessoryListUltility.show()
+        accessoryListExterior.hide()
+    })
+    btnAccessory.click(function() {
+        accessoryListAccessory.show()
+        accessoryListUltility.hide()
+        accessoryListExterior.hide()
+    })
+}())

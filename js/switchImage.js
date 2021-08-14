@@ -1,6 +1,6 @@
 //switch image
 var arrImage = [{
-        "url ": "1. jpg ",
+        url : "1.jpg ",
         link: "abcd"
     },
     {
@@ -15,13 +15,13 @@ var arrImage = [{
         link: "abcd"
     }
 ]
-var img = document.querySelector('.img-slide');
-img.src = `../image/` + arrImage[0].url;
 var current = 0;
+var img = document.querySelector('.img-slide');
 
 function switchImage() {
-    current++;
     img.src = `../image/` + arrImage[current].url;
+    current++;
+ 
     if (current < 3) {
         setTimeout("switchImage()", 3000)
     } else {

@@ -257,9 +257,32 @@
     padding: 0;
 }
 
-.product-image {
+.product-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-info__block {
+    height: 150px;
     width: 50%;
 }
+
+.product-image {
+    width: 50%;
+    height: 250px;
+}
+
+.more__info {
+    width: 50%;
+    margin-top: -75px;
+}
+
+.btn-1,
+.btn-2 {
+    width: max-content;
+    height: 40px;
+}
+
 
 .item-color-1 {
     background-color: rgb(162, 38, 0);
@@ -704,13 +727,24 @@ Catalogue */
         justify-content: space-between;
     }
 
+    .more__info {
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
     #specification .accessory-btn button {
         margin-right: 5px;
         margin-top: 5px;
     }
-    .input-search{
+
+    .input-search {
         width: 100px;
     }
+
     .header-menu__item i {
         margin-left: 2px;
     }

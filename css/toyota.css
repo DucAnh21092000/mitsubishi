@@ -159,7 +159,10 @@
 }
 
 .info-item__image {
-    width: 69%;
+    display: flex;
+    justify-content: center;
+    width: 36px;
+    height: 48px;
 }
 
 .info-item__name {
@@ -322,7 +325,9 @@
 .library-image {
     display: flex;
     margin: 0;
-    width: 100%
+    width: 100%;
+    ;
+    flex-wrap: wrap;
 }
 
 .library-name {
@@ -331,7 +336,9 @@
 
 .library-image__item {
     object-fit: cover;
-    width: 25%;
+    width: 33%;
+    height: 250px;
+    margin: 2px;
 }
 
 
@@ -381,13 +388,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-template-rows: 300px;
-    grid-gap:4px;
+    grid-gap: 4px;
 }
 
 .ngoaithat-img {
     object-fit: cover;
     width: 100%;
+    height: 250px;
 }
+
 
 
 /* Support */
@@ -435,19 +444,25 @@
     height: 321px;
     object-fit: cover;
 }
-.list-image{
-object-fit: cover;
-width: 100%;
+
+.furniture,
+#ngoaithat {
+    background-color: rgb(246, 246, 246);
+}
+
+.list-image {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    margin: 5px;
 }
 
 .furniture-item {
     padding: 5% 5%;
-    background: url(https://www.toyota.com.vn/Content/images/detail_noithat_bg.png);
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-color: #f6f6f6;
     width: 50%;
-    float: right;
     height: 321px;
 }
 
@@ -564,20 +579,132 @@ Catalogue */
 
 /* footer */
 
-.footer{
-    background-color: rgb(0,0,0);
+.footer {
+    background-color: rgb(0, 0, 0);
 }
-.footer-menu{
-    display:grid;
-    grid-template-columns:  repeat(auto-fit,minmax(175px,1fr)) ;
-    grid-gap:10px;
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-gap: 10px;
 }
-.item-name{
+
+.item-name {
     font-size: 0.8rem;
     font-weight: 500;
     margin: 15% 0 5% 0;
 }
-.footer-info{
-    display:grid;
-    grid-template-columns:  repeat(auto-fit,minmax(175px,1fr)) ;
+
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+}
+
+/* 
+  ==================================== Responsive============================================
+*/
+
+@media screen and (max-width: 428px) {
+    .header-menu div {
+        display: none;
+    }
+
+    .header-menu {
+        padding-bottom: 55px;
+    }
+
+    .header-search div {}
+
+    .header-menu__item {
+        position: absolute;
+        right: 0;
+        top: 35px
+    }
+
+    .menu-info {
+        display: none;
+    }
+
+    .product-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product-info__block,
+    .product-image {
+        width: 50%;
+        height: 250px;
+    }
+
+    .product-color li {
+        width: 50px;
+        height: 50px;
+    }
+
+    .product-color {
+        display: flex;
+        width: 100%;
+        margin-left: -20px;
+        margin-top: 5px;
+    }
+
+    .product-style {
+        width: 100%;
+        margin-left: -20px;
+        font-weight: 500;
+    }
+
+    .text-red {
+        font-size: 18px;
+    }
+
+    .li-info {
+        font-size: 16px;
+        text-indent: 20px;
+    }
+
+    p.li-info {
+        text-indent: 40px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: max-content;
+        height: 40px;
+    }
+
+    .library-image img {
+        width: 48%;
+    }
+
+    .ngoaithat-img,
+    .list-image {
+        width: 90%;
+        object-fit: cover;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .ngoaithat-item__2,
+    .furniture-list__image {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .furniture-item {
+        width: 100%;
+    }
+
+    .accessory .accessory-btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #specification .accessory-btn button {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
 }

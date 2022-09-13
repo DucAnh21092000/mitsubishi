@@ -14,6 +14,7 @@
     left: 0;
     right: 0;
     background-color: white;
+    padding-bottom: 10px;
 }
 
 .header-menu__item {
@@ -706,5 +707,11 @@ Catalogue */
     #specification .accessory-btn button {
         margin-right: 5px;
         margin-top: 5px;
+    }
+    .input-search{
+        width: 100px;
+    }
+    .header-menu__item i {
+        margin-left: 2px;
     }
 }
